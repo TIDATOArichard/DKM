@@ -13,7 +13,7 @@ export default function Product() {
         {
             id: 2,
             name: "Poule",
-            description: "",
+            description: "Poules bio, élevées en plein air & Nourriture 100% naturelle, sans produits chimiques !",
             price: "5000 FCFA",
             image: "/images/photo9.jpg"
         },
