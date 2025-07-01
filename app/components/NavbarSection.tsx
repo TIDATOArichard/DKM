@@ -13,7 +13,7 @@ export default function Navbar() {
 
             {/* Logo Text */}
             <a href="#" className="text-2xl md:text-3xl font-serif font-bold text-amber-900 tracking-wide">
-              Pintades chez ASKY-DKM
+              Chez ASKY-DKM
             </a>
           </div>
 
