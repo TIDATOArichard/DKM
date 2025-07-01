@@ -28,12 +28,12 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg font-bold font-serif mb-4">Liens rapides</h3>
                     <ul className="space-y-2">
-                        <li><a href="#" className="text-amber-200 hover:text-white transition-colors">Accueil</a></li>
-                        <li><a href="#" className="text-amber-200 hover:text-white transition-colors">Nos Produits</a></li>
-                        <li><a href="#" className="text-amber-200 hover:text-white transition-colors">Notre Ferme</a></li>
-                        <li><a href="#" className="text-amber-200 hover:text-white transition-colors">Témoignages</a></li>
-                        <li><a href="#" className="text-amber-200 hover:text-white transition-colors">Pourquoi Nous</a></li>
-                        <li><a href="#" className="text-amber-200 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#home" className="text-amber-200 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="#products" className="text-amber-200 hover:text-white transition-colors">Nos Produits</a></li>
+                        <li><a href="#farm" className="text-amber-200 hover:text-white transition-colors">Notre Ferme</a></li>
+                        
+                        <li><a href="#why" className="text-amber-200 hover:text-white transition-colors">Pourquoi Nous</a></li>
+                        <li><a href="#contact" className="text-amber-200 hover:text-white transition-colors">Contact</a></li>
                     </ul>
                 </div>
 
