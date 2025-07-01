@@ -8,7 +8,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-2">
             {/* Logo Icon or Placeholder */}
             <div className="w-10 h-10 bg-amber-900 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
-              AS
+              <img src="/images/logo1.jpg" alt="Logo de l'entreprise" className="h-16 w-auto" />
             </div>
 
             {/* Logo Text */}

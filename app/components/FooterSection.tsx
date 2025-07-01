@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
                 {/* Colonne Logo + Description */}
                 <div className="space-y-4">
-                    <div className="text-2xl font-bold font-serif">LOGO</div>
+                    <div className="text-2xl font-bold font-serif"><img src="/images/logo1.jpg" alt="Logo de l'entreprise" className="h-16 w-auto" /></div>
                     <p className="text-amber-200">
                         Volailles fermières élevées en plein air dans le respect du bien-être animal et de l'environnement.
                     </p>
