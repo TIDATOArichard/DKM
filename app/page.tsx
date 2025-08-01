@@ -5,6 +5,7 @@ import Faq from "./components/FaqSection";
 import Contact from "./components/ContactSection";
 import Footer from "./components/FooterSection";
 import HomePage from "./components/HomeSection";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 
 export default function Home() {
@@ -17,6 +18,9 @@ export default function Home() {
       <Faq />
       <Contact />
       <Footer />
+      
+      {/* Bouton WhatsApp flottant */}
+      <WhatsAppButton variant="floating" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import WhatsAppButton from './WhatsAppButton';
 
 export default function ContactPage() {
     return (
@@ -81,6 +82,21 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="font-semibold text-amber-900">Téléphone</h3>
                                         <p className="text-amber-800">+228 99 63 31 35</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center gap-4">
+                                    <Phone className="w-6 h-6 text-green-600" />
+                                    <div>
+                                        <h3 className="font-semibold text-amber-900">WhatsApp</h3>
+                                        <p className="text-amber-800 mb-2">+228 71 33 23 45</p>
+                                        <WhatsAppButton 
+                                            phoneNumber="+22871332345"
+                                            message="Bonjour ! Je souhaiterais obtenir des informations sur vos volailles et passer commande."
+                                            className="text-sm px-4 py-2"
+                                        >
+                                            Contacter maintenant
+                                        </WhatsAppButton>
                                     </div>
                                 </div>
 

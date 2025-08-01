@@ -77,6 +77,9 @@ Le site utilise une navigation par défilement (smooth scrolling) avec des liens
 - Sections modulaires facilement modifiables
 - Interface utilisateur intuitive avec DaisyUI
 - Architecture orientée composants
+- **Intégration WhatsApp complète** avec boutons de commande directe
+- **Bouton WhatsApp flottant** visible sur toute la navigation
+- **Messages personnalisés** selon le contexte (produit, contact, etc.)
 
 ## 🔄 Déploiement
 

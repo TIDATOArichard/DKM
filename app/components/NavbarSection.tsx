@@ -2,17 +2,17 @@ import { PhoneCall } from 'lucide-react';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-50 animate-slideInLeft">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24 items-center">
           <div className="flex items-center space-x-2">
             {/* Logo Icon or Placeholder */}
-            <div className="w-10 h-10 bg-amber-900 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
-              <img src="/images/logo1.jpg" alt="Logo de l'entreprise" className="h-16 w-auto" />
+            <div className="w-10 h-10 bg-amber-900 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md animate-zoomIn">
+              <img src="/images/logo1.jpg" alt="Logo de l'entreprise" className="h-16 w-auto transition-transform duration-300 hover:scale-110" />
             </div>
 
             {/* Logo Text */}
-            <a href="#" className="text-2xl md:text-3xl font-serif font-bold text-amber-900 tracking-wide">
+            <a href="#" className="text-2xl md:text-3xl font-serif font-bold text-amber-900 tracking-wide transition-all duration-300 hover:text-amber-700 animate-fadeInUp">
               Chez ASKY-DKM
             </a>
           </div>
@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className="flex space-x-8">
               <a
                 href="#home"
-                className="text-amber-900 hover:text-amber-700 px-3 py-2 font-medium transition-colors border-b-2 border-transparent hover:border-amber-600"
+                className="text-amber-900 hover:text-amber-700 px-3 py-2 font-medium transition-all duration-300 border-b-2 border-transparent hover:border-amber-600 transform hover:-translate-y-1"
               >
                 Accueil
               </a>
