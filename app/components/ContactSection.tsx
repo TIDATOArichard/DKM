@@ -6,48 +6,48 @@ export default function ContactPage() {
     return (
         <section id='contact'>
             <div className="bg-white">
-                <div className="max-w-6xl mx-auto px-4 py-16">
+                <div className="max-w-6xl mx-auto px-4 py-12 sm:py-16">
                     {/* Section Contact Form */}
-                    <div className="grid md:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
                         {/* Formulaire */}
-                        <div>
-                            <h1 className="text-4xl font-bold font-serif text-amber-900 mb-8">Envoyez-nous un message</h1>
+                        <div className="order-2 lg:order-1">
+                            <h1 className="text-3xl sm:text-4xl font-bold font-serif text-amber-900 mb-6 sm:mb-8">Envoyez-nous un message</h1>
 
-                            <form className="space-y-6">
-                                <div className="grid grid-cols-2 gap-4">
+                            <form className="space-y-4 sm:space-y-6">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block text-amber-800 mb-2">Nom</label>
+                                        <label className="block text-amber-800 mb-2 text-sm sm:text-base">Nom</label>
                                         <input
                                             type="text"
                                             placeholder="Votre nom"
-                                            className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+                                            className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm sm:text-base"
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-amber-800 mb-2">Email</label>
+                                        <label className="block text-amber-800 mb-2 text-sm sm:text-base">Email</label>
                                         <input
                                             type="email"
                                             placeholder="Votre email"
-                                            className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+                                            className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm sm:text-base"
                                         />
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label className="block text-amber-800 mb-2">Sujet</label>
+                                    <label className="block text-amber-800 mb-2 text-sm sm:text-base">Sujet</label>
                                     <input
                                         type="text"
                                         placeholder="Sujet de votre message"
-                                        className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+                                        className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm sm:text-base"
                                     />
                                 </div>
 
                                 <div>
-                                    <label className="block text-amber-800 mb-2">Message</label>
+                                    <label className="block text-amber-800 mb-2 text-sm sm:text-base">Message</label>
                                     <textarea
                                         placeholder="Votre message"
-                                        rows={5}
-                                        className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+                                        rows={4}
+                                        className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm sm:text-base"
                                     ></textarea>
                                 </div>
 

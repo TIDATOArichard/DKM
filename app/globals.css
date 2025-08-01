@@ -131,3 +131,47 @@ html {
   white-space: nowrap;
   animation: typing 3s steps(40, end);
 }
+
+/* Classes utilitaires responsive */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Optimisations touch pour mobile */
+@media (hover: none) and (pointer: coarse) {
+  .hover\:scale-105:hover {
+    transform: none;
+  }
+  
+  .hover\:shadow-xl:hover {
+    box-shadow: none;
+  }
+  
+  /* Garde seulement les effets tactiles */
+  button:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Amélioration des zones de touch */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Espacement pour les doigts */
+  .touch-target {
+    padding: 12px;
+  }
+}
