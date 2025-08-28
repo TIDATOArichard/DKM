@@ -45,7 +45,7 @@ export default function Product() {
         
         {
             id: 6,
-            name: "Œufs Frais Mixte",
+            name: "Œufs de table",
             description: "30 œufs (15 poule, 15 pintade)",
             price: "3000 FCFA",
             image: "/images/photo6.jpg"
