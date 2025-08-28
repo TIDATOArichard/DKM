@@ -4,9 +4,9 @@ import { Facebook, Twitter, Instagram } from 'lucide-react';
 export default function Footer() {
     return (
         <footer className="bg-amber-900 text-amber-50 pt-16 pb-8 px-4">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
                 {/* Colonne Logo + Description */}
-                <div className="space-y-4">
+                <div className="space-y-4 flex flex-col items-center md:items-start">
                     <div className="text-2xl font-bold font-serif"><img src="/images/logo1.jpg" alt="Logo de l'entreprise" className="h-16 w-auto" /></div>
                     <p className="text-amber-200">
                         Volailles fermières élevées en plein air dans le respect du bien-être animal et de l'environnement.
@@ -49,25 +49,26 @@ export default function Footer() {
                 </div>
 
                 {/* Colonne Newsletter */}
-                {/* <div>
-                    <h3 className="text-lg font-bold font-serif mb-4">Newsletter</h3>
+                <div>
+                    <h3 className="text-lg font-bold font-serif mb-4">Commander par Email</h3>
                     <p className="text-amber-200 mb-4">
-                        Inscrivez-vous pour recevoir nos actualités et offres spéciales.
+                        Envoyez votre commande à <a href="mailto:tidatoar@gmail.com" className="underline text-white">tidatoar@gmail.com</a>
                     </p>
-                    <form className="flex gap-2">
+                    <form className="flex gap-2" action="mailto:tidatoar@gmail.com" method="POST" encType="text/plain">
                         <input
-                            type="email"
-                            placeholder="Votre email"
+                            type="text"
+                            name="commande"
+                            placeholder="Votre commande"
                             className="flex-grow px-4 py-2 rounded text-amber-900 focus:outline-none focus:ring-2 focus:ring-amber-400"
                         />
-                       <button
+                        <button
                             type="submit"
                             className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded transition-colors"
                         >
-                            S'inscrire
+                            Envoyer
                         </button>
                     </form>
-                </div>*/}
+                </div>
             </div>
 
             {/* Copyright */}

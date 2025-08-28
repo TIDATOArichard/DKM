@@ -1,3 +1,15 @@
+@keyframes zoomSlow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-zoomSlow {
+  animation: zoomSlow 6s ease-in-out infinite alternate;
+}
 @import "tailwindcss";
 @plugin "daisyui" {
   themes: cupcake --default, dark --prefersdark, light;

@@ -13,7 +13,7 @@ export default function ContactPage() {
                         <div className="order-2 lg:order-1">
                             <h1 className="text-3xl sm:text-4xl font-bold font-serif text-amber-900 mb-6 sm:mb-8">Envoyez-nous un message</h1>
 
-                            <form className="space-y-4 sm:space-y-6">
+                            <form className="space-y-4 sm:space-y-6" action="mailto:tidatoar@gmail.com" method="POST" encType="text/plain">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
                                         <label className="block text-amber-800 mb-2 text-sm sm:text-base">Nom</label>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="font-semibold text-amber-900">Horaires d'ouverture</h3>
                                         <p className="text-amber-800">
-                                            Nous sommes a votre disposition 24h/24h & 7j/7j
+                                            Nous sommes à votre disposition 24h/24h & 7j/7j
                                         </p>
                                     </div>
                                 </div>

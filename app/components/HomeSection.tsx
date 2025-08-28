@@ -10,16 +10,15 @@ export default function HomePage() {
       <div className="flex flex-col min-h-screen">
         {/* Section Hero */}
         <section
-          className="hero flex-grow relative"
-          style={{
-            backgroundImage: "url('/images/photo1.jpeg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            minHeight: '70vh'
-          }}
+          className="hero flex-grow relative overflow-hidden"
+          style={{ minHeight: '70vh' }}
         >
-          <div className="hero-overlay bg-opacity-50"></div>
-          <div className="hero-content text-center text-neutral-content relative z-10 px-4">
+          <div
+            className="absolute inset-0 w-full h-full bg-cover bg-center animate-zoomSlow"
+            style={{ backgroundImage: "url('/images/photo1.jpeg')" }}
+          ></div>
+          <div className="hero-overlay bg-opacity-50 absolute inset-0 z-10"></div>
+          <div className="hero-content text-center text-neutral-content relative z-20 px-4">
             <div className="max-w-2xl space-y-6 sm:space-y-8">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif tracking-tight leading-tight animate-fadeInUp">
                 Des volailles d&apos;exception, <br className="hidden sm:block" />élevées naturellement
