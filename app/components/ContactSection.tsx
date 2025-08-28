@@ -119,10 +119,10 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            <div className="mt-8 pt-6 border-t border-amber-200">
+                            {/*<div className="mt-8 pt-6 border-t border-amber-200">
                                 <h3 className="font-semibold text-amber-900 mb-4">Suivez-nous</h3>
                                 <div className="flex gap-4">
-                                    {/* Ici vous pouvez ajouter vos icônes de réseaux sociaux */}
+                                     Ici vous pouvez ajouter vos icônes de réseaux sociaux
                                     <div className="w-10 h-10 rounded-full bg-amber-200 flex items-center justify-center text-amber-700">
                                         <span className="text-lg">f</span>
                                     </div>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                                         <span className="text-lg">ig</span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

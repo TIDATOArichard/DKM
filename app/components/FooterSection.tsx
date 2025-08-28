@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
 
                 {/* Colonne Newsletter */}
-                <div>
+                {/* <div>
                     <h3 className="text-lg font-bold font-serif mb-4">Newsletter</h3>
                     <p className="text-amber-200 mb-4">
                         Inscrivez-vous pour recevoir nos actualités et offres spéciales.
@@ -60,14 +60,14 @@ export default function Footer() {
                             placeholder="Votre email"
                             className="flex-grow px-4 py-2 rounded text-amber-900 focus:outline-none focus:ring-2 focus:ring-amber-400"
                         />
-                        <button
+                       <button
                             type="submit"
                             className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded transition-colors"
                         >
                             S'inscrire
                         </button>
                     </form>
-                </div>
+                </div>*/}
             </div>
 
             {/* Copyright */}

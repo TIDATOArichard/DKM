@@ -15,13 +15,13 @@ export default function Navbar() {
         <div className="flex justify-between h-16 sm:h-20 md:h-24 items-center">
           <div className="flex items-center space-x-2 min-w-0 flex-1">
             {/* Logo Icon or Placeholder */}
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-amber-900 text-white rounded-full flex items-center justify-center font-bold text-sm sm:text-lg shadow-md animate-zoomIn flex-shrink-0">
-              <img src="/images/logo1.jpg" alt="Logo de l'entreprise" className="h-12 sm:h-16 w-auto transition-transform duration-300 hover:scale-110" />
+            <div className="flex items-center justify-center mr-4">
+              <img src="/images/logo1.jpg" alt="Logo de l'entreprise" className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-cover shadow-md transition-transform duration-300 hover:scale-110 border-4 border-amber-900" />
             </div>
 
             {/* Logo Text */}
             <a href="#" className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif font-bold text-amber-900 tracking-wide transition-all duration-300 hover:text-amber-700 animate-fadeInUp truncate">
-              <span className="hidden sm:inline">Chez ASKY-DKM</span>
+              <span className="hidden sm:inline">ASKY-DKM</span>
               <span className="sm:hidden">ASKY-DKM</span>
             </a>
           </div>

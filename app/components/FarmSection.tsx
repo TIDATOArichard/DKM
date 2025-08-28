@@ -78,7 +78,7 @@ export default function Farm() {
                         </div>
                         <div className="order-2 md:order-1 rounded-xl overflow-hidden shadow-lg">
                             <Image
-                                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                src="/images/pintade.jpg"
                                 alt="Environnement de la ferme"
                                 width={800}
                                 height={600}
