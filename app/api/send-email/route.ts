@@ -1,9 +1,16 @@
-import nodemailer from 'nodemailer';
+import nodemailer, { SendMailOptions } from 'nodemailer';
 import { NextResponse } from 'next/server';
+
+type EmailPayload = {
+  name?: string;
+  email?: string;
+  subject?: string;
+  message?: string;
+};
 
 export async function POST(req: Request) {
   try {
-    const data = await req.json();
+    const data = (await req.json()) as EmailPayload;
     const { name, email, subject, message } = data;
 
     const transporter = nodemailer.createTransport({
@@ -16,12 +23,12 @@ export async function POST(req: Request) {
       },
     });
 
-    const mailOptions = {
+    const mailOptions: SendMailOptions = {
       from: process.env.SMTP_FROM || (process.env.SMTP_USER ?? 'no-reply@example.com'),
       to: 'tidatoar@gmail.com',
       subject: subject || `Message de ${name || email}`,
       text: `${name ? `Nom: ${name}\n` : ''}${email ? `Email: ${email}\n\n` : ''}${message || ''}`,
-    } as any;
+    };
 
     await transporter.sendMail(mailOptions);
 
