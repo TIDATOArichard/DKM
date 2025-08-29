@@ -56,7 +56,7 @@ export default function FloatingParticles({
   }, [count]);
 
   return (
-    <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
+    <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`} suppressHydrationWarning>
       {particles.map(particle => (
         <div
           key={particle.id}
