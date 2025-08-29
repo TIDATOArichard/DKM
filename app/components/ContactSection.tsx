@@ -1,8 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
+'use client';
+import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import WhatsAppButton from './WhatsAppButton';
 
 export default function ContactPage() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const to = 'tidatoar@gmail.com';
+        const mailSubject = encodeURIComponent(subject || `Message de ${name || email}`);
+        const bodyLines = [];
+        if (name) bodyLines.push(`Nom: ${name}`);
+        if (email) bodyLines.push(`Email: ${email}`);
+        if (message) bodyLines.push('', `Message:\n${message}`);
+        const mailBody = encodeURIComponent(bodyLines.join('\n'));
+        const mailto = `mailto:${to}?subject=${mailSubject}&body=${mailBody}`;
+        // Try to open default mail client
+        window.location.href = mailto;
+    };
+
     return (
         <section id='contact'>
             <div className="bg-white">
@@ -13,13 +34,15 @@ export default function ContactPage() {
                         <div className="order-2 lg:order-1">
                             <h1 className="text-3xl sm:text-4xl font-bold font-serif text-amber-900 mb-6 sm:mb-8">Envoyez-nous un message</h1>
 
-                            <form className="space-y-4 sm:space-y-6" action="mailto:tidatoar@gmail.com" method="POST" encType="text/plain">
+                            <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
                                         <label className="block text-amber-800 mb-2 text-sm sm:text-base">Nom</label>
                                         <input
                                             type="text"
                                             placeholder="Votre nom"
+                                            value={name}
+                                            onChange={(e) => setName(e.target.value)}
                                             className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm sm:text-base"
                                         />
                                     </div>
@@ -28,6 +51,8 @@ export default function ContactPage() {
                                         <input
                                             type="email"
                                             placeholder="Votre email"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
                                             className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm sm:text-base"
                                         />
                                     </div>
@@ -38,6 +63,8 @@ export default function ContactPage() {
                                     <input
                                         type="text"
                                         placeholder="Sujet de votre message"
+                                        value={subject}
+                                        onChange={(e) => setSubject(e.target.value)}
                                         className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm sm:text-base"
                                     />
                                 </div>
@@ -47,6 +74,8 @@ export default function ContactPage() {
                                     <textarea
                                         placeholder="Votre message"
                                         rows={4}
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
                                         className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm sm:text-base"
                                     ></textarea>
                                 </div>

@@ -52,7 +52,7 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg font-bold font-serif mb-4">Commander par Email</h3>
                     <p className="text-amber-200 mb-4">
-                        Envoyez votre commande à <a href="mailto:tidatoar@gmail.com" className="underline text-white">tidatoar@gmail.com</a>
+                        Envoyez votre commande à <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tidatoar@gmail.com" target="_blank" rel="noreferrer" className="underline text-white">tidatoar@gmail.com</a>
                     </p>
                     <form className="flex gap-2" action="mailto:tidatoar@gmail.com" method="POST" encType="text/plain">
                         <input
@@ -61,12 +61,12 @@ export default function Footer() {
                             placeholder="Votre commande"
                             className="flex-grow px-4 py-2 rounded text-amber-900 focus:outline-none focus:ring-2 focus:ring-amber-400"
                         />
-                        <button
+                       {/*  <button
                             type="submit"
                             className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded transition-colors"
                         >
                             Envoyer
-                        </button>
+                        </button>*/}
                     </form>
                 </div>
             </div>
