@@ -86,7 +86,7 @@ export default function ContactPage() {
                                 </div>
 
                                 <div className="flex items-center gap-4">
-                                    <Phone className="w-6 h-6 text-green-600" />
+                                    {/*<Phone className="w-6 h-6 text-green-600" />*/}
                                     <div>
                                         <h3 className="font-semibold text-amber-900">WhatsApp</h3>
                                         <p className="text-amber-800 mb-2">+228 71 33 23 45</p>
